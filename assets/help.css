@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  animation: transitionIn 1s;
+}
+.nav {
+  background-color: #107ab0;
+  height: 80px;
+  display: flex;
+}
+.navbar {
+  margin-left: 15px;
+  margin-top: 30px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  margin-left: 15px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: 0.2s;
+  border-radius: 100px;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.head {
+  text-align: center;
+  margin-top: 1.6em;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+
+.first h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+}
+
+.first {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+}
+
+.bg {
+  background: #008b8b;
+  border-radius: 100px;
+}
+
+.first p {
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #fff;
+  line-height: 2.4;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.center {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+#info {
+  text-align: center;
+  background-color: #107ab0;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 15px;
+}
+
+footer p {
+  text-align: center;
+  background-color: #107ab0;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 15px;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    rotate: 10px;
+  }
+  to {
+    opacity: 1;
+    rotate: 0;
+  }
+}
