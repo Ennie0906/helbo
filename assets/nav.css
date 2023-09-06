@@ -1,200 +1,234 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  animation: transitionIn 1s;
+    animation: transitionIn 1s;
 }
 
 .nav {
-  background-color: #008b8b;
-  height: 80px;
-  display: flex;
+    background-color: #008b8b;
+    height: 80px;
+    display: flex;
 }
 
 .navbar {
-  margin-left: 15px;
-  margin-top: 30px;
+    margin-left: 15px;
+    margin-top: 30px;
 }
 
 .navbar a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  margin-left: 15px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin-left: 15px;
 }
 
 .navbar a::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  height: 2px;
-  width: 0;
-  background-color: #000;
-  transition: 0.2s;
-  border-radius: 100px;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    transition: 0.2s;
+    border-radius: 100px;
 }
 
 .navbar a:hover::before {
-  width: 100%;
+    width: 100%;
 }
 
 .logo img {
-  height: 80px;
-  width: 80px;
-  border-radius: 50px;
-  margin-left: 5px;
-  padding: 5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    margin-left: 5px;
+    padding: 5px;
 }
 
 .head {
-  background: linear-gradient(to bottom, #008b8b, rgba(255, 255, 255));
-  height: 50vh;
+    background: linear-gradient(to bottom, #008b8b, rgba(255, 255, 255));
+    height: 50vh;
 }
 
 .front-image {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 5px;
 
-  animation: transitionImg 2s;
+    animation: transitionImg 2s;
 }
 
 .head h1 {
-  text-align: center;
-  font-size: 70px;
-  font-family: "Playfair Display", serif;
-  color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Playfair Display", serif;
+    color: #fff;
 }
 
 .head p {
-  text-align: center;
-  font-family: "Qwitcher Grypen", cursive;
-  font-size: 2.5em;
-  color: transparent black;
-  position: relative;
-  bottom: 0;
-  margin-top: 5px;
+    text-align: center;
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 2.5em;
+    color: transparent black;
+    position: relative;
+    bottom: 0;
+    margin-top: 5px;
 }
 
 article h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 30px;
-  text-decoration: underline;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 article p {
-  text-align: center;
-  line-height: 2.4;
-  margin-top: 25px;
-  padding: 3%;
-  letter-spacing: 1px;
-  background-color: #008b8b;
-  border-radius: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+    text-align: center;
+    line-height: 2.4;
+    margin-top: 25px;
+    padding: 3%;
+    letter-spacing: 1px;
+    background-color: #008b8b;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
 }
 
 .container {
-  padding: 16px;
-  font-family: "Playfair Display", serif;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
-  padding: 2em;
-  border-radius: 50px;
-  margin-top: 5em;
-  background-color: orange;
+    padding: 16px;
+    font-family: "Playfair Display", serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 2em;
+    border-radius: 50px;
+    margin-top: 5em;
+    background-color: orange;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-  border-radius: 100px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 100px;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
-  background-color: #ddd;
-  outline: none;
+    background-color: #ddd;
+    outline: none;
 }
 
 hr {
-  border: 1px solid black;
-  margin-bottom: 25px;
+    border: 1px solid black;
+    margin-bottom: 25px;
 }
 
 .registerbtn {
-  background-color: #107ab0;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-  border-radius: 100px;
-  letter-spacing: 1px;
+    background-color: #107ab0;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 100px;
+    letter-spacing: 1px;
 }
 
 .registerbtn:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 a {
-  color: #107ab0;
+    color: #107ab0;
 }
 
 .signin {
-  background-color: #f1f1f1;
-  text-align: center;
+    background-color: #f1f1f1;
+    text-align: center;
 }
 
 #info {
-  text-align: center;
-  background-color: #107ab0;
-  letter-spacing: 1px;
-  color: #fff;
-  padding: 15px;
+    text-align: center;
+    background-color: #107ab0;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 15px;
 }
 
 footer p {
-  text-align: center;
-  background-color: #107ab0;
-  letter-spacing: 1px;
-  color: #fff;
-  padding: 15px;
+    text-align: center;
+    background-color: #107ab0;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 15px;
 }
 
 @keyframes transitionIn {
-  from {
-    opacity: 0;
-    rotate: 10px;
-  }
-  to {
-    opacity: 1;
-    rotate: 0;
-  }
+    from {
+        opacity: 0;
+        rotate: 10px;
+    }
+
+    to {
+        opacity: 1;
+        rotate: 0;
+    }
 }
 
 @keyframes transitionImg {
-  from {
-    rotate: 45deg;
-  }
-  to {
-    rotate: 0;
-  }
+    from {
+        rotate: 45deg;
+    }
+
+    to {
+        rotate: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar a {
+        font-size: medium;
+
+    }
+
+    .nav {
+        display: flex;
+
+    }
+
+    .logo img {
+        visibility: hidden;
+    }
+
+    article p {
+        text-align: center;
+        line-height: 2.4;
+        margin-top: 25px;
+        padding: 6%;
+        letter-spacing: 1px;
+        background-color: #008b8b;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1000px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+    }
 }

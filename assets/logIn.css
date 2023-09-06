@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  animation: transitionIn 1s;
+body{
+    animation: transitionIn 1s;
 }
 
 .nav {
@@ -62,8 +62,8 @@ body {
   background-color: orange;
   margin-top: 5em;
   width: 50%;
-  margin-bottom: 5em;
 }
+
 
 input[type="text"],
 input[type="password"] {
@@ -121,10 +121,26 @@ a {
   padding: 15px;
 }
 
+footer{
+    margin-bottom:;
+}
+
 footer p {
   text-align: center;
   background-color: #107ab0;
   letter-spacing: 1px;
   color: #fff;
   padding: 15px;
+ 
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    rotate: 10px;
+  }
+  to {
+    opacity: 1;
+    rotate: 0;
+  }
 }

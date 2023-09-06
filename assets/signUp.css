@@ -127,3 +127,14 @@ footer p {
   color: #fff;
   padding: 15px;
 }
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    rotate: 10px;
+  }
+  to {
+    opacity: 1;
+    rotate: 0;
+  }
+}
